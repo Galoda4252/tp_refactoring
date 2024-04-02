@@ -34,4 +34,14 @@ public class Humain {
 	        System.out.println("Nom : " + nom+ "Prénom : " + prenom+"Âge : " + age);
 	       
 	    }
+	public String toString() {
+        return "Nom : " + nom + "\nPrénom : " + prenom + "\nÂge : " + age;
+    }
+	public void manger() {
+		 System.out.println("mange");
+	}
+	public void boire() {
+		 System.out.println("boire");
+	}
+	
 }
