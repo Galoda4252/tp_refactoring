@@ -9,6 +9,6 @@ public class Femme extends Humain {
 		Femme vao= new Femme("vao","soa",14);
 		Homme koto= new Homme("koto", "rabe",15);
 		
-		vao.ami(koto);
+		vao.ami(koto, 100);
 	}
 }

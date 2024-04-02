@@ -46,7 +46,7 @@ public class Humain {
         return "Nom : " + nom + "\nPrénom : " + prenom + "\nÂge : " + age;
     }
 
-    public void ami(Humain h) {
-        System.out.println(this.nom + " "+this.prenom+ " est ami avec " + h.nom+" "+h.prenom);
+    public void ami(Humain h, int duree) {
+        System.out.println(this.nom + " "+this.prenom+ " est ami avec " + h.nom+" "+h.prenom +"de duree : "+duree);
     }
 }
