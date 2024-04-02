@@ -9,5 +9,5 @@ public interface Consommation {
 	static void boire() {
 		 System.out.println("boire");
 	}
-
+	
 }

@@ -2,40 +2,51 @@ package ui.bad;
 
 public class Humain {
 
-	private String nom;
-	private String prenom;
-	private int age;
+    private String nom;
+    private String prenom;
+    private int age;
 
-	 public String getNom() {
-		return nom;
-	}
+    
+    public Humain(String nom, String prenom, int age) {
+        this.nom = nom;
+        this.prenom = prenom;
+        this.age = age;
+    }
 
-	public void setNom(String nom) {
-		this.nom = nom;
-	}
+    public String getNom() {
+        return nom;
+    }
 
-	public String getPrenom() {
-		return prenom;
-	}
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
 
-	public void setPrenom(String prenom) {
-		this.prenom = prenom;
-	}
+    public String getPrenom() {
+        return prenom;
+    }
 
-	public int getAge() {
-		return age;
-	}
+    public void setPrenom(String prenom) {
+        this.prenom = prenom;
+    }
 
-	public void setAge(int age) {
-		this.age = age;
-	}
+    public int getAge() {
+        return age;
+    }
 
-	public void details() {
-	        System.out.println("Nom : " + nom+ "Prénom : " + prenom+"Âge : " + age);
-	       
-	    }
-	public String toString() {
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void details() {
+        System.out.println("Nom : " + nom + "\nPrénom : " + prenom + "\nÂge : " + age);
+    }
+
+    @Override
+    public String toString() {
         return "Nom : " + nom + "\nPrénom : " + prenom + "\nÂge : " + age;
     }
-	
+
+    public void ami(Humain h) {
+        System.out.println(this.nom + " "+this.prenom+ " est ami avec " + h.nom+" "+h.prenom);
+    }
 }
